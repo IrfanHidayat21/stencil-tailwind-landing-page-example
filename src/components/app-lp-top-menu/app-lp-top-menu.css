@@ -1,0 +1,88 @@
+.body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: #fff;
+  z-index: 999999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nice-anim {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-duration: 500ms;
+}
+
+.animMenu {
+  animation-name: slide-in-menu;
+}
+.animOut {
+  animation-name: slide-out-menu;
+}
+@keyframes slide-in-menu {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@keyframes slide-out-menu {
+  0% {
+      
+      opacity: 1;
+  }
+  100% {
+      transform: translateX(-100%);
+      opacity: 0.8;
+  }
+}
+
+.btn-close-top-menu {
+  visibility: visible;
+  position: absolute;
+  right: 0px;
+  top: 15px;
+}
+.btn-close-top-menu > ion-icon {
+  font-size: 33px;
+}
+
+.div-toolbar-top-LP {
+  margin-top: 55px;
+  margin-left: 30px;
+}
+.btn-toolbar-top-LP{
+  display: block !important;
+}
+.btn-toolbar-top-LP > ul > li> a {
+  color: #392D38;
+}
+.btn-toolbar-top-LP > ul > li {
+  margin-bottom: 21px;
+}
+.btn-toolbar-top-LP > ul > li {
+  list-style-type: none;
+  font-size: 20px;
+  color: #FC1474;
+}
+
+.noneLi {
+  list-style-type: none; 
+}
+.nonea {
+  color: var(--ion-color-jet);
+}
+
+app-lp-top-menu ul {
+  cursor:pointer;
+}
+
+app-lp-top-menu li:hover {
+  background:gainsboro;
+  border-radius:8px;
+  padding: 3px;
+}

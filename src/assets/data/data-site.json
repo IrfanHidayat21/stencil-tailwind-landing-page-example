@@ -1,0 +1,124 @@
+{
+	"data": {
+		"intro": {
+			"title": "Aplikasi ujian online #1 di Indonesia",
+			"imgUrl": "/assets/img/home/Main-pict.png"
+		},
+		"howtowork": {
+			"title": "Monev adalah aplikasi assessment management system yang didesain untuk memudahkan sebuah institusi dalam melakukan proses monitoring dan evaluasi dari seluruh rangkaian proses ujian.",
+			"videoUrl": ""
+		},
+		"about": {
+			"title": "Ujian Highstake & Non-highstake Lebih Mudah Tanpa Harus Banyak Biaya",
+			"desc": "Brand Monev dibuat agar mampu menjangkau kebutuhan di pasar pendidikan yang lebih banyak. Sehingga kebutuhan yang dapat dilayani nantinya bukan hanya kegiatan CBT Online, namun kegiatan proses belajar mengajar serta kegiatan pendukung lainnya seperti penelitian, survey dan lain-lain."
+		},
+		"content": [{
+				"id": "1",
+				"title": "Database Ujian",
+				"imgUrl": "/assets/img/home/Database-Ujian.png",
+				"desc": "Monev Admin dapat membantu dalam mengelola database buku soal, peserta, dan lokasi ujian dengan mudah dan efektif.Serta memfasilitasi import buku soal dan membership",
+				"contents": [{
+						"id": "1",
+						"contentId": "1",
+						"detail": "Import soal"
+					},
+					{
+						"id": "2",
+						"contentId": "1",
+						"detail": "Daftarkan peserta"
+					},
+					{
+						"id": "3",
+						"contentId": "1",
+						"detail": "Preparation exam"
+					},
+					{
+						"id": "4",
+						"contentId": "1",
+						"detail": "Monitoring exam"
+					},
+					{
+						"id": "5",
+						"contentId": "1",
+						"detail": "Evaluation exam"
+					}
+				]
+			},
+			{
+				"id": "2",
+				"title": "Data Analisis",
+				"imgUrl": "/assets/img/home/Analisis-Data.png",
+				"desc": "Memfasilitasi kebutuhan data analytics, sehingga pengguna dapat melakukan proses monitoring, evaluasi dan dapat melihat lebih jauh potensi yang mereka miliki lewat data statistik ",
+				"contents": [{
+						"id": "1",
+						"contentId": "2",
+						"detail": "Statistik peserta"
+					},
+					{
+						"id": "2",
+						"contentId": "2",
+						"detail": "Statistik analisa ujian"
+					},
+					{
+						"id": "3",
+						"contentId": "2",
+						"detail": "Statistik analisa buku soal"
+					},
+					{
+						"id": "4",
+						"contentId": "2",
+						"detail": "Statistik analisa butir soal"
+					},
+					{
+						"id": "5",
+						"contentId": "2",
+						"detail": "Statistik analisa nilai peserta"
+					}
+				]
+			},
+			{
+				"id": "3",
+				"title": "Ujian Mudah & Aman",
+				"imgUrl": "/assets/img/home/Ujian-Mudah.png",
+				"desc": "Monev App dapat membantu peserta dalam melakukan ujian dimana pun dengan fasilitas sync soal yang dapat menyimpan jawaban peserta ketika koneksi internet putus.",
+				"contents": [{
+						"id": "1",
+						"contentId": "3",
+						"detail": "Mendukung bermacam-macam platform"
+					},
+					{
+						"id": "2",
+						"contentId": "3",
+						"detail": "Sinkronisasi jawaban"
+					},
+					{
+						"id": "3",
+						"contentId": "3",
+						"detail": "Filter jadwal ujian"
+					},
+					{
+						"id": "4",
+						"contentId": "3",
+						"detail": "Filter riwayat ujian"
+					},
+					{
+						"id": "5",
+						"contentId": "3",
+						"detail": "Hasil ujian"
+					}
+				]
+			}
+		 ],
+		"testimoni": {
+			"name": "Mr.John, Head Technician, Pavard University",
+			"testi": "“Veniam aute cupidatat excepteur ex ad velit. Aliquip mollit eu et sit dolor dolor laborum do consequat ex officia. Duis adipisicing excepteur nulla esse incididunt excepteur enim est et laboris nisi anim incididunt.”"
+		},
+		"partner": [{
+			"name": "Pavard University",
+			"imgUrl": "/assets/img/monev-rectangle-light.png"
+		}],
+
+		"explain1": "Pendidikan di Indonesia harus diarahkan pada peningkatan kualitas kemampuan intelektual dan profesional serta sikap, kepribadian dan moral. Dengan kemampuan dan sikap manusia Indonesia yang demikian maka pada gilirannya akan menjadikan masyarakat Indonesia masyarakat yang bermartabat, disegani dan dihormati di mata masyarakat dunia.",
+		"explain2": "Monev adalah wujud semangat anak bangsa dalam membantu memperkuat konsep empat pilar pendidikan di Indonesia, sehingga mampu memberikan kontribusi positif dan menjadi salah satu fondasi kuat untuk terwujudnya e-education yang berkualitas. Berangkat dari portofolio tersebut, brand monev dibuat agar mampu menjangkau kebutuhan di pasar pendidikan yang lebih banyak. Sehingga kebutuhan yang dapat dilayani nantinya bukan hanya kegiatan CBT Online, namun kegiatan proses belajar mengajar serta kegiatan pendukung lainnya seperti penelitian, survey dan lain-lain."
+	}
+}

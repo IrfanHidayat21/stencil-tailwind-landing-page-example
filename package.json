@@ -1,0 +1,39 @@
+{
+  "name": "monev-site",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Website Monev",
+  "scripts": {
+    "lint": "eslint src/ --ext .js,.ts,.jsx,.tsx",
+    "lint.fix": "lint -- --fix",
+    "build": "stencil build",
+    "prerender": "stencil build --prerender",
+    "start": "stencil build --dev --watch --serve",
+    "serve": "stencil serve --root www",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "deploy": "npm run build && firebase deploy",
+    "buildCSS": "postcss src/public/build/tailwind.css -o src/global.css",
+    "watchCSS": "postcss src/public/build/tailwind.css -o src/global.css --watch"
+  },
+  "dependencies": {
+    "@ionic/core": "^5.0.7"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^1.3.0",
+    "@stencil/core": "^1.14.0",
+    "@types/jest": "24.0.20",
+    "@types/node": "^14.0.1",
+    "@types/puppeteer": "1.19.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "autoprefixer": "^9.7.6",
+    "eslint": "^6.8.0",
+    "jest": "24.9.0",
+    "jest-cli": "24.9.0",
+    "postcss-cli": "^7.1.1",
+    "puppeteer": "2.1.0",
+    "tailwindcss": "^1.4.6",
+    "workbox-build": "4.3.1"
+  }
+}

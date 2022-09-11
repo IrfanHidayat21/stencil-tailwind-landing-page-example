@@ -1,0 +1,59 @@
+{
+  "profile":  [
+    {
+        "imgUrl": "/assets/img/company/profile-1.png" ,
+        "name": "Zein Kharisma",
+        "title": "CEO" 
+    },
+    {
+        "imgUrl": "/assets/img/company/profile-2.png" ,
+        "name": "Pitrasacha Adytia",
+        "title": "CEO" 
+    },
+    {
+        "imgUrl": "/assets/img/company/profile-3.png" ,
+        "name": "Agus Tandri Tan",
+        "title": "CEO" 
+    },
+    {
+        "imgUrl": "/assets/img/company/profile-4.png" ,
+        "name": "I Nengah Riandika",
+        "title": "CEO" 
+    },
+    {
+        "imgUrl": "/assets/img/company/profile-5.png" ,
+        "name": "Irfan Hidayat",
+        "title": "CEO" 
+    }
+],
+       "galleryL": [
+        {
+            "imgUrl": "/assets/img/company/ujian-2.jpg" ,
+            "desc": "Ujian CPNS"
+        }
+    ],
+        "galleryR": [    {
+            "imgUrl": "/assets/img/company/ujian-3.jpg" ,
+            "desc": "Ujian CPNS"
+        },
+        {
+            "imgUrl": "/assets/img/company/ujian-1.jpg" ,
+            "desc": "Ujian CPNS"
+        }
+    ],
+        "galleryB": [    {
+            "imgUrl": "/assets/img/company/ujian-2.jpg" ,
+            "desc": "Ujian CPNS"
+        },
+        {
+            "imgUrl": "/assets/img/company/ujian-3.jpg" ,
+            "desc": "Ujian CPNS"
+        },
+        {
+            "imgUrl": "/assets/img/company/ujian-1.jpg" ,
+            "desc": "Ujian CPNS"
+        }
+    ]
+    
+
+}

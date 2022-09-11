@@ -1,0 +1,64 @@
+.mv-video-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+}
+
+.mv-video-item>div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mv-video-btn {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  opacity: 0.6;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.mv-video-btn:hover {
+  opacity: 0.9;
+}
+
+.mv-video-item .mv-video-item-video {
+  display: block;
+  z-index: 0;
+}
+
+#previewVideo {
+  width: 100%;
+  height: 100%; 
+  z-index: 0;
+}
+
+#fullVideo {
+  width: 100%;
+  height: 100%; 
+  z-index: 0;
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+    .mv-video-btn {
+        top: 40%;
+        left: 42%;
+      }
+}
+
+@media (min-width: 1280px) {
+    .mv-video-btn {
+        top: 40%;
+        left: 45%;
+      }
+}

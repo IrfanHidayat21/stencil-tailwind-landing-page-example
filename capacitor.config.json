@@ -1,0 +1,6 @@
+{
+  "appId": "co.monev.site",
+  "appName": "monev-site",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

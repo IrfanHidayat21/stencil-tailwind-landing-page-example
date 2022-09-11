@@ -1,0 +1,856 @@
+/* Document Level Styles */
+
+/*
+  The imports below are needed to include our light dom css for global styles such as fonts and colors.
+  You can comment out any of these imports if you do not need that css. For example, if you have your own
+  global font family css then you can comment out the typography.css import.
+*/
+
+/** Core CSS required for ionic components to work property */
+
+@import "~@ionic/core/css/core.css";
+
+/** Basic CSS for apps built with Ionic */
+
+@import "~@ionic/core/css/normalize.css";
+
+@import "~@ionic/core/css/structure.css";
+
+@import "~@ionic/core/css/typography.css";
+
+/** Optional CSS utils that can be commented out */
+
+@import "~@ionic/core/css/padding.css";
+
+@import "~@ionic/core/css/float-elements.css";
+
+@import "~@ionic/core/css/text-alignment.css";
+
+@import "~@ionic/core/css/text-transformation.css";
+
+@import "~@ionic/core/css/flex-utils.css";
+
+/*
+  The CSS Variables below can be used to theme your app.
+  For more info on CSS variables check out:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
+
+  More info about color theming using Ionic:
+  https://ionipopover-stylecframework.com/docs/theming/color-generator
+*/
+
+@tailwind base;
+@tailwind components;
+
+  /* #navbar Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header {
+  @apply fixed w-full bg-white;
+}
+
+.head-sidemenu {
+  @apply block;
+}
+
+.head-navbar {
+  @apply hidden;
+}
+
+.div-sidemenu {
+ @apply fixed w-full flex bg-white justify-between px-3 z-20;
+}
+
+.nav-md {
+  @apply  h-16 flex;
+}
+
+.nav-lg {
+  @apply my-auto border-b border-gray-300 flex justify-between bg-white mx-auto;
+}
+
+.containermv {
+  @apply mt-12 mx-auto pt-4 font-sans;
+}
+
+.container-support {
+  @apply w-full mx-auto px-6 py-0 leading-10;
+}
+
+.div-footer {
+  @apply  mx-auto grid grid-cols-2 text-sm;
+}
+
+.title-footer {
+  @apply mb-3 mt-5 font-bold text-gray-800;
+}
+
+.link-footer {
+  @apply text-gray-700 mb-2;
+ }
+ 
+
+.link-footer:hover {
+ @apply text-brand-pink cursor-pointer;
+}
+
+.bottom-footer {
+  @apply mx-auto block py-3 mt-10 bg-gray-200;
+}
+
+.flex-footer {
+  @apply block w-full mx-auto my-auto;
+}
+
+.div-fic {
+ @apply py-4 w-full mx-auto;
+}
+  /* #image & icon Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.img-tlogo {
+  @apply relative block p-1 my-auto px-2;
+}
+
+.img-blogo {
+  @apply relative block p-1 my-auto pl-5;
+}
+
+.img-llogo {
+  @apply mx-auto;
+}
+
+.logo-center {
+  @apply mx-auto w-32 mb-6 pt-8;
+}
+
+.icon-checkmark {
+  @apply text-xl text-brand-pink -mb-1 pr-2 my-auto;
+}
+
+.line-horizontal {
+  @apply mx-auto w-5/12 h-px border-b border-gray-300;
+}
+
+.line-pink-rounded {
+  @apply h-1 mx-auto bg-brand-pink w-24 opacity-75 mt-4 rounded;
+}
+
+.tooltip:active .clickable {
+  @apply transform -rotate-180 pr-2;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  text-align: center;
+  padding: 2px 8px;
+  position: absolute;
+  z-index: 100;
+}
+
+.tooltip:active .tooltip-text {
+  visibility: visible;
+}
+
+.zoom {
+  transition: transform .8s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  opacity: 0.9;
+  transform: scale(1.10);
+  
+}
+
+  /* #content Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.bg {
+  @apply bg-white font-sans leading-tight tracking-normal;
+}
+
+.div-intro {
+  @apply mx-auto pt-8 pb-6 w-2/3; 
+  /* min-height : 16rem; */
+}
+
+.img-intro {
+  @apply mx-auto py-16 w-1/2;
+}
+
+.title-intro {
+  @apply text-center w-3/4 mx-auto;
+}
+
+.div-content {
+  @apply block w-11/12 mx-auto h-auto py-10 my-10 justify-center;
+}
+
+.div-content-bggray {
+  @apply hidden bg-gray-300 w-full h-auto py-16 my-20 justify-center;
+}
+
+.div-video {
+  @apply  h-full w-full justify-center rounded-sm align-middle;
+}
+
+.div-text-howtowork {
+  @apply h-full px-10 align-middle pb-2;
+}
+
+.div-testi {
+  @apply  mx-auto py-10 my-10 w-3/4 text-center;
+}
+
+.div-explain {
+  @apply mx-auto w-3/4 py-10 my-10 text-left;
+}
+
+.div-button {
+  @apply block mx-10 py-10 justify-center;
+}
+
+.area-video {
+  @apply px-16;
+}
+
+.title-content {
+  @apply font-bold  text-gray-800 text-2xl;
+}
+
+.title-about {
+  @apply font-bold text-2xl w-11/12 mx-auto;
+}
+
+.div-flexcol {
+  @apply relative block flex flex-col items-center;
+}
+
+.div-flexcol2 {
+  @apply flex flex-col;
+}
+
+.div-widthcard {
+  @apply max-w-full mx-auto my-3;
+}
+
+.card-priceL {
+  @apply w-11/12 max-w-sm my-8 relative z-0 rounded-lg shadow-lg;
+}
+
+.card-priceR {
+  @apply w-11/12 max-w-sm my-8 relative z-0 rounded-lg shadow-lg;
+}
+
+.div-card {
+  @apply block text-left text-sm max-w-sm mx-auto mt-2 text-black px-8 leading-normal;
+}
+
+.h1-card {
+  @apply text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide;
+}
+
+.h2-card {
+  @apply text-sm text-gray-500 text-center pb-6;
+}
+
+.flex-card {
+  @apply flex flex-wrap mt-3 px-6;
+} 
+
+.grid-card {
+  @apply grid grid-cols-1 gap-4 py-6;
+}
+
+.grid-company {
+ @apply grid grid-cols-2 gap-4 px-4 py-6;
+}
+
+.rounded-checklist {
+ @apply rounded-full p-2 fill-current text-green-700;
+}
+
+.card-shadow {
+  @apply bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden;
+}
+
+.svg-checklist {
+ @apply w-6 h-6 align-middle;
+} 
+
+.text-checklist {
+  @apply text-gray-700 text-lg ml-3;
+}
+
+.div-btn-card {
+ @apply block flex items-center p-5 px-8  uppercase;
+}
+
+.btn-card {
+ @apply mt-3 bg-brand-pink text-lg font-semibold w-full text-white rounded-lg px-6 py-3 block shadow-xl;
+}
+
+.btn-card:hover {
+  @apply bg-pink-500;
+ }
+
+ .card-center {
+   @apply w-full max-w-md my-8 relative z-10 bg-white rounded-lg shadow-lg;
+ }
+
+ .name-stories {
+  @apply text-lg font-semibold text-gray-800;
+ }
+
+ .desc-stories {
+   @apply py-2 text-sm leading-normal text-gray-700;
+ }
+
+ .cover-gallery {
+  @apply block w-full h-full bg-no-repeat bg-center bg-cover;
+ }
+ .div-gallery {
+   @apply mx-auto w-full py-10 my-10 justify-center;
+ }
+
+ .div-galleryL {
+   @apply w-full h-64 mb-0 px-0 overflow-hidden;
+ }
+
+ .div-galleryR1 {
+   @apply w-full mb-0 px-0;
+ }
+
+ .div-galleryR2 {
+   @apply w-full h-48 mb-0 px-0 overflow-hidden;
+ }
+
+ .div-galleryB {
+   @apply w-full h-32 mb-0 px-0 overflow-hidden;
+ }
+
+.desc-about {
+  @apply font-normal w-11/12 mx-auto;
+}
+
+.detail-content {
+  @apply font-normal text-base;
+}
+
+.text-content {
+  @apply h-full text-left;
+}
+
+.img-content {
+  @apply w-full;
+}
+
+.title-center {
+  @apply text-center title-content mt-6 pt-4 -mb-10;
+}
+
+.detail-center {
+  @apply text-center text-base text-gray-700 mt-2 px-6;
+}
+
+.img-center {
+  @apply h-auto w-full justify-center;
+}
+
+.img-right {
+  @apply my-auto pt-10;
+}
+
+.img-left {
+  @apply my-auto pb-10;
+}
+
+.popover-style { 
+  --box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --min-width: 300px;
+}
+
+  /* #button- Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+button:focus {
+  outline:0;
+}
+
+.btn-nav {
+  @apply py-6 px-4 text-base font-normal text-gray-700 ml-1 uppercase;
+}
+
+.btn-nav:hover {
+  @apply text-brand-pink;
+}
+
+.btn-nav-2 {
+  @apply relative block py-6 px-2 text-base font-normal;
+}
+
+.btn-hamburger {
+  @apply text-3xl text-brand-pink;
+}
+
+.btn-primary {
+  @apply bg-brand-pink text-white py-2 px-2;
+}
+
+.btn-primary:hover {
+  @apply bg-pink-500;
+}
+
+.btn-primary:active {
+  @apply bg-pink-600;
+}
+
+.btn-primary-rounded {
+  @apply w-full rounded;
+}
+
+.btn-primary-outline {
+  @apply border-brand-pink border-solid border-2 rounded-lg text-brand-pink py-2 px-2;
+  border-radius: 30%;
+}
+
+.btn-primary-outline:hover {
+  @apply bg-gray-100;
+}
+
+.btn-primary-outline:active {
+  @apply bg-gray-200;
+}
+
+
+.btn-white {
+  @apply bg-white text-blue-800 py-2 px-2;
+}
+
+.btn-white:hover {
+  @apply bg-gray-100;
+}
+
+.btn-white:active {
+  @apply bg-gray-200;
+}
+
+.btn-white-rounded {
+  @apply w-full rounded;
+}
+
+
+.btn-transparent {
+  @apply bg-transparent font-normal text-base pt-6 w-full rounded;
+}
+
+.btn-transparent:hover {
+  @apply text-pink-600;
+}
+
+.btn-underline {
+  @apply text-brand-pink text-base cursor-pointer font-normal underline;
+}
+
+.btn-adm {
+  @apply my-auto w-32 h-12 ml-3 rounded;
+}
+
+.text-sidemenu {
+  width: 100%;
+}
+
+h2{
+  text-align:center;
+  padding: 20px;
+}
+
+.skeleton-img-intro {
+  @apply w-full h-32;
+}
+
+.skeleton-txt-intro {
+  @apply mx-auto title-content w-3/4 my-0 h-4;
+}
+
+.skeleton-howtowork {
+  @apply h-full w-full justify-center rounded-sm;
+}
+
+.skeleton-imgContent {
+  @apply w-full h-48 justify-center;
+}
+
+.skeleton-imgPartner {
+  @apply w-32 h-32  mx-auto mt-5 justify-center;
+}
+
+.skeleton-logo-center {
+  @apply mx-auto w-32 h-32 mb-6 mt-8;
+}
+    /* #screen Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  @media (max-width: 413px) {
+    .grid-company {
+      @apply grid-cols-1;
+     }
+  }
+@screen sm {
+  .btn {
+      @apply text-base;
+  }
+
+  .div-footer {
+    @apply  grid-cols-3;
+  }
+
+  .card-priceL {
+    @apply w-3/5 my-5;
+  }
+
+  .card-priceR {
+    @apply w-3/5 my-5;
+  }
+
+  .div-card {
+    @apply text-base;
+  }
+
+  .grid-card {
+    @apply grid-cols-2;
+  }
+
+  .grid-company {
+    @apply grid-cols-2;
+   }
+
+  .card-center {
+    @apply w-2/3 my-5;
+  }
+
+  .div-flexcol2 {
+    @apply flex-row;
+  }
+
+  .div-galleryR2 {
+    @apply w-1/2 mb-0;
+  }
+
+  .div-galleryB {
+    @apply w-1/3 mb-0;
+  }
+
+} 
+
+@screen md {
+  .div-content {
+  @apply flex; 
+ }
+
+ .text-content {
+   @apply w-1/2;
+ }
+
+ .img-content {
+   @apply w-7/12;
+ }
+
+ .img-intro {
+  @apply w-1/3;
+}
+
+.div-intro {
+  @apply w-1/3; 
+}
+
+.btn-primary-rounded {
+  @apply w-auto;
+}
+
+.title-intro {
+  @apply text-4xl;
+}
+
+.div-button {
+  @apply flex;
+}
+
+.btn-transparent {
+  @apply w-auto pt-0 ml-3;
+}
+
+.skeleton-img-intro {
+  @apply h-64;
+}
+
+.div-content-bggray {
+  @apply flex;
+}
+
+.div-text-howtowork {
+  @apply w-3/4 px-4;
+}
+
+.title-about {
+  @apply text-3xl;
+}
+
+.desc-about {
+  @apply text-xl;
+}
+
+.img-right {
+  @apply pt-0 ml-10;
+}
+
+.img-left {
+  @apply pb-0 mr-10;
+}
+
+.skeleton-imgContent {
+  @apply h-72;
+}
+
+.div-explain {
+  @apply text-justify;
+}
+
+.div-footer {
+  @apply  grid-cols-4;
+}
+
+.bottom-footer {
+  @apply flex justify-between;
+}
+
+.flex-footer {
+  @apply flex;
+}
+
+.div-fic {
+  @apply w-1/3 float-right;
+ }
+
+ .area-video {
+  @apply w-4/6;
+}
+
+.title-center {
+  @apply text-4xl;
+}
+
+.card-priceL {
+  @apply -mr-4;
+}
+
+.card-priceR {
+  @apply -ml-4;
+}
+
+.div-widthcard {
+  @apply max-w-6xl px-8;
+}
+
+.grid-card {
+  @apply grid-cols-2;
+}
+
+.grid-company {
+  @apply grid-cols-3;
+ }
+
+.container-support {
+  @apply w-11/12 px-12;
+}
+
+.name-stories {
+  @apply text-xl;
+ }
+
+ .desc-stories {
+  @apply text-base;
+ }
+
+ .div-galleryL {
+  @apply w-1/2 h-auto;
+}
+
+.div-galleryR1 {
+  @apply w-1/2;
+}
+
+.div-flexcol2 {
+  @apply flex-col;
+}
+
+.div-galleryR2 {
+  @apply w-full mb-0;
+}
+
+.div-galleryB {
+  @apply h-48;
+}
+
+
+.div-video {
+  @apply py-20 bg-gray-800;
+}
+
+}
+
+@screen lg {
+  .div-content {
+    @apply w-full; 
+   }
+
+  .btn-nav {
+    @apply text-base p-4;
+ }
+
+  .btn-nav-2 {
+    @apply text-base p-6;
+ }
+
+  .text-content {
+    @apply w-1/3;
+  }
+
+  .img-content {
+    @apply w-5/12;
+  }
+
+  .img-intro {
+  @apply py-0;
+}
+
+.div-intro {
+  @apply py-0; 
+}
+
+.title-intro {
+  @apply text-5xl;
+}
+
+.div-text-howtowork {
+  @apply w-5/12;
+}
+
+.title-about {
+  @apply w-full px-16;
+}
+
+.desc-about {
+  @apply w-full px-16;
+}
+
+.div-testi {
+  @apply  w-2/5;
+}
+
+.head-sidemenu {
+  @apply hidden;
+}
+
+.head-navbar {
+  @apply block;
+}
+
+.div-footer {
+  @apply grid-cols-6;
+}
+
+.area-video {
+  @apply w-5/12;
+}
+
+.img-llogo {
+  @apply py-2;
+}
+
+.title-center {
+  @apply text-5xl mt-4 mb-0;
+}
+
+.card-priceL {
+  @apply w-1/3;
+}
+
+.card-priceR {
+  @apply w-1/3;
+}
+
+.div-card {
+  @apply px-6;
+}
+
+.grid-card {
+  @apply grid-cols-3;
+}
+
+.grid-company {
+  @apply grid-cols-5;
+ }
+
+.container-support {
+  @apply py-0;
+}
+
+.div-flexcol {
+  @apply flex-row;
+}
+
+.card-center {
+  @apply w-1/3;
+}
+
+.div-gallery {
+  @apply w-11/12;
+}
+
+.logo-center {
+  @apply pt-0;
+}
+
+.skeleton-logo-center {
+  @apply mt-0;
+}
+
+.txt-lg {
+  @apply text-3xl;
+}
+
+.div-video {
+  @apply py-16 bg-gray-800;
+}
+
+}
+
+@screen xl {
+  .div-text-howtowork {
+    @apply w-1/3;
+  }
+
+  .area-video {
+    @apply w-5/12;
+  }
+
+  .grid-card {
+    @apply grid-cols-3;
+  }
+
+  .grid-company {
+    @apply grid-cols-5;
+   }
+
+   .div-galleryR2 {
+    @apply h-64 mb-0;
+  }
+
+  .div-video {
+    @apply py-8 bg-gray-800;
+  }
+
+}
+
+@tailwind utilities;
+
